@@ -1,22 +1,11 @@
-import React, {useState} from 'react';
-import Header from './Header';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import './global.css';
+import Routes from './routes';
 
 function App() {
-  let counter = useState(0);
-
-function Increment(){
-  counter++;
-}
-
   return (
-    <div>
-      <header>Contador: {counter}</header>
-      <button onClick={Increment}>Incrementar</button>
-  </div>
-    
-    
+    <Routes/>   
   );
 }
 
