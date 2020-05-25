@@ -10,13 +10,12 @@ export default function Profile(){
       <header>
         <img src={logo} alt="logo"/>
         <span>Bem vindo, usuário</span>
-        
+        <h1>Usuários<p></p> Cadastrados</h1>
         <Link className="button" to="/incidents/new">Cadastrar novo usuário</Link>
         <button type="button">
-          <FiPower size={18} color="#e02041"/>
+          <FiPower size={18} />
         </button>
       </header>
-      <h1>Usuários Cadastrados</h1>
       <ul>
         <li>
           <p>Imagem do produto, pegar do bd </p>
