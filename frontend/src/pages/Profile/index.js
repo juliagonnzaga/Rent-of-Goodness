@@ -20,7 +20,7 @@ export default function Profile(){
         <li>
           <p>Imagem do produto, pegar do bd </p>
 
-          <strong>Sofá cama em bom estado</strong>
+          <strong>Alugo Casa na praia</strong>
           <p>teste1</p>
 
           <strong>Descrição do produto</strong>
@@ -36,7 +36,7 @@ export default function Profile(){
         <li>
           <p>Imagem do produto, pegar do bd </p>
 
-          <strong>Sofá cama em bom estado</strong>
+          <strong>Serviços de Jardinagem</strong>
           <p>teste1</p>
 
           <strong>Descrição do produto</strong>
@@ -52,7 +52,7 @@ export default function Profile(){
         <li>
           <p>Imagem do produto, pegar do bd </p>
 
-          <strong>Sofá cama em bom estado</strong>
+          <strong>Aulas particulares de francês </strong>
           <p>teste1</p>
 
           <strong>Descrição do produto</strong>
@@ -68,7 +68,7 @@ export default function Profile(){
         <li>
           <p>Imagem do produto, pegar do bd </p>
 
-          <strong>Sofá cama em bom estado</strong>
+          <strong>Passeio com cahorros nos fins de semana</strong>
           <p>teste1</p>
 
           <strong>Descrição do produto</strong>

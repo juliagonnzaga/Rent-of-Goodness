@@ -16,11 +16,11 @@ export default function NewIncident() {
           </section>
 
           <input type="text" placeholder="Nome do produto" />
-          <input type="textarea" placeholder="Descrição" />
+          <textarea placeholder="Descrição" />
           <input type="text" placeholder="Valor em reais" />
           <button className="button" type="submit">Cadastrar</button>
 
-          <Link className="back-link" to="/">
+          <Link className="back-link" to="/profile">
             <FiArrowLeft size={16} color="#e02041" />
             Voltar para página anterior
           </Link>
