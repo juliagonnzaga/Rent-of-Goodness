@@ -1,6 +1,6 @@
 //obs linha 29: a primeira chave indica um código js no html, a segunda chave indica um objeto do js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import './styles.css';
 import api from '../../services/api';
@@ -12,6 +12,7 @@ export default function Register() {
   const [WhatsApp, setWhatsApp] = useState('');
   const [Cidade, setCidade] = useState('');
   const [UF, setUF] = useState('');
+  const history = useHistory();
 
 async function handleRegister(e) {
   e.preventDefault();
@@ -25,7 +26,9 @@ async function handleRegister(e) {
   };
   try{
     const response = await api.post('ongs', data);
-    alert(`Cadastro efetuado! Seu ID de acesso: ${response.data.id}`);
+    localStorage.setItem('ong', id);
+    localStorage.setItem('ongName', response.data.name);
+    history.push('/');
     } catch(err){
     alert('Erro no cadastro, tente novamente')
   }
